@@ -1,0 +1,13 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="ProjectJsonTask.ImportProjectJsonTask" AssemblyFile="D:\Documents\visual studio 2017\Projects\ConsoleApp2\ProjectJsonTask\bin\Debug\netstandard1.3\ProjectJsonTask.dll" />
+
+  <Target Name="gurka" BeforeTargets="_GenerateRestoreGraphWalkPerFramework">
+    <ImportProjectJsonTask  ExistingPackageReferences="@(PackageReference)">
+      <Output
+          TaskParameter="PackageReferences"
+          ItemName="PackageReference"  />
+    </ImportProjectJsonTask>
+
+    <Message Text="@(PackageReference)" Importance="high" />
+  </Target>
+</Project>
