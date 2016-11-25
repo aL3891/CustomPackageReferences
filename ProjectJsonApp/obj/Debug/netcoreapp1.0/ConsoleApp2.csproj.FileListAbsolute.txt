@@ -1,6 +1,0 @@
-d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.0\ConsoleApp2.dll
-d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.0\ConsoleApp2.pdb
-d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.0\ConsoleApp2.csprojResolveAssemblyReference.cache
-d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.0\ConsoleApp2.AssemblyInfo.cs
-d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.0\ConsoleApp2.dll
-d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.0\ConsoleApp2.pdb

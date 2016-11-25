@@ -1,5 +1,0 @@
-D:\Documents\GitHubVisualStudio\msbuild-projectAnything\ProjectJsonApp\bin\Debug\netcoreapp1.0\ProjectJsonApp.dll
-D:\Documents\GitHubVisualStudio\msbuild-projectAnything\ProjectJsonApp\bin\Debug\netcoreapp1.0\ProjectJsonApp.pdb
-D:\Documents\GitHubVisualStudio\msbuild-projectAnything\ProjectJsonApp\obj\Debug\netcoreapp1.0\ProjectJsonApp.AssemblyInfo.cs
-D:\Documents\GitHubVisualStudio\msbuild-projectAnything\ProjectJsonApp\obj\Debug\netcoreapp1.0\ProjectJsonApp.dll
-D:\Documents\GitHubVisualStudio\msbuild-projectAnything\ProjectJsonApp\obj\Debug\netcoreapp1.0\ProjectJsonApp.pdb
