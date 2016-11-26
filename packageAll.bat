@@ -1,1 +1,1 @@
-nuget pack ProjectJsonTask\ProjectJsonTask.nuspec -outputdirectory packages
+nuget pack JsonPackageReference\JsonPackageReference.nuspec -outputdirectory packages

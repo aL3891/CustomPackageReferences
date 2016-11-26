@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProjectAny
+namespace CustomPackageReferences
 {
     public class PackageReference
     {

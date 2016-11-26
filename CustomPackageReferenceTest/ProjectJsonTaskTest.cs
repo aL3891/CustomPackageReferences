@@ -1,8 +1,7 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectAny;
 
-namespace ProjectAnyTests
+namespace CustomPackageReferences
 {
     [TestClass]
     public class ProjectJsonTaskTest
@@ -10,7 +9,7 @@ namespace ProjectAnyTests
         [TestMethod]
         public void TestMethod1()
         {
-            var res = new ProjectJsonImporter().GetPackages(@"D:\Documents\GitHubVisualStudio\msbuild-projectAnything\ProjectAnyTests", "");
+            var res = new JsonPackageReferenceTask().GetPackages(@"D:\Documents\GitHubVisualStudio\msbuild-projectAnything\ProjectAnyTests", "");
         }
     }
 }

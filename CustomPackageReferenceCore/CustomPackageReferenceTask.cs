@@ -4,9 +4,9 @@ using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 using System.Linq;
 
-namespace ProjectAny
+namespace CustomPackageReferences
 {
-    public abstract class ProjectAnyTask : Task
+    public abstract class CustomPackageReferenceTask : Task
     {
 
         public string TargetFramework { get; set; }

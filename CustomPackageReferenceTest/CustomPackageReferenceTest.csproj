@@ -30,13 +30,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjectAnyBase\ProjectAnyBase.csproj" />
-    <ProjectReference Include="..\ProjectJsonTask\JsonPackageReference.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Microsoft.Build.Utilities.Core">
       <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Utilities.Core.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomPackageReferenceCore\CustomPackageReferenceCore.csproj" />
+    <ProjectReference Include="..\JsonPackageReference\JsonPackageReference.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

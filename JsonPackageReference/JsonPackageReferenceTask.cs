@@ -6,10 +6,10 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace ProjectAny
+namespace CustomPackageReferences
 {
 
-    public class ProjectJsonImporter : ProjectAnyTask
+    public class JsonPackageReferenceTask : CustomPackageReferenceTask
     {
         public override IEnumerable<PackageReference> GetPackages(string projectPath, string targetFramework)
         {

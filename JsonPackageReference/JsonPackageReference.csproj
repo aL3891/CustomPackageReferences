@@ -7,13 +7,8 @@
     <Compile Include="**\*.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ProjectJsonTask.nuspec" />
-    <None Include="ProjectJsonTask.targets">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProjectAnyBase\ProjectAnyBase.csproj" />
+    <None Include="JsonPackageReference.nuspec" />
+    <None Include="JsonPackageReference.targets" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NETStandard.Library">
@@ -35,6 +30,8 @@
       <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CustomPackageReferenceCore\CustomPackageReferenceCore.csproj" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
