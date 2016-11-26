@@ -17,6 +17,7 @@
   </metadata>
   <files>
     <file src="\bin\Debug\netstandard1.3\ProjectJsonTask.dll" target="ProjectJsonTask.dll" />
+    <file src="\bin\Debug\netstandard1.3\ProjectAnyBase.dll" target="ProjectAnyBase.dll" />
     <file src="ProjectJsonTask.targets" target="build\ProjectJsonTask.targets" />
   </files>
 

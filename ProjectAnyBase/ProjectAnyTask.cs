@@ -18,10 +18,7 @@ namespace ProjectAny
 
         public override bool Execute()
         {
-            Console.ReadLine();
-
             List<TaskItem> res = new List<TaskItem>();
-
             foreach (var pr in GetPackages(ProjectPath, TargetFramework))
             {
                 var t = new TaskItem(pr.Name);

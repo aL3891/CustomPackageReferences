@@ -1,0 +1,1 @@
+nuget pack ProjectJsonTask\ProjectJsonTask.nuspec -outputdirectory packages

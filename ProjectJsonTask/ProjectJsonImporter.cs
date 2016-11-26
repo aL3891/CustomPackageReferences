@@ -13,7 +13,6 @@ namespace ProjectAny
     {
         public override IEnumerable<PackageReference> GetPackages(string projectPath, string targetFramework)
         {
-
             var json = JToken.Parse(File.ReadAllText(Path.Combine(projectPath, "project.json")));
             var deps = json["dependencies"];
             
@@ -22,7 +21,6 @@ namespace ProjectAny
                 Name = c.Name,
                 Version = c.First.Type == JTokenType.Object ? c.Value.Value<string>("version") : (string)((JValue)c.Value).Value
             });
-
         }
     }
 }
