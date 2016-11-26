@@ -1,6 +1,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask TaskName="ProjectAny.ProjectJsonImporter" AssemblyFile="ProjectJsonTask.dll" />
-  <Target Name="ShimProjectFile" BeforeTargets="_GenerateRestoreGraphWalkPerFramework">
+  <UsingTask TaskName="ProjectAny.ProjectJsonImporter" AssemblyFile="..\ProjectJsonTask.dll" />
+  <Target Name="ShimProjectFile" BeforeTargets="_GenerateRestoreGraphWalk">
     <ProjectJsonImporter  ExistingPackageReferences="@(PackageReference)">
       <Output
           TaskParameter="PackageReferences"

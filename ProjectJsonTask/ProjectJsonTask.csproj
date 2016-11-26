@@ -1,8 +1,5 @@
 ﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
-  <PropertyGroup Label="Configuration">
-    <OutputPath>$(NuGetPackageRoot)\ProjectJsonTask\0.0.1\build</OutputPath>
-  </PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
   </PropertyGroup>
@@ -10,6 +7,7 @@
     <Compile Include="**\*.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ProjectJsonTask.nuspec" />
     <None Include="ProjectJsonTask.targets">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
