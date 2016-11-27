@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,10 +9,10 @@
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="project.json" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="JsonPackageReference">
+    <PackageReference Include="ConfigPackageReference">
       <Version>0.0.9-beta2</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.App">
@@ -25,5 +25,5 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(NuGetPackageRoot)jsonpackagereference\0.0.9-beta2\build\JsonPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)jsonpackagereference\0.0.9-beta2\build\JsonPackageReference.targets')" />
+  <Import Project="$(NuGetPackageRoot)ConfigPackageReference\0.0.9-beta2\build\ConfigPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)ConfigPackageReference\0.0.9-beta2\build\ConfigPackageReference.targets')" />
 </Project>

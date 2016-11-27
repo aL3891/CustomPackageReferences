@@ -1,6 +1,7 @@
 
 {
   "dependencies": {
-    "Moq": "4.6.38-alpha"
+    "Moq": "4.6.38-alpha", "stateless": "3.0.1"
+      
   }
 }

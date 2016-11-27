@@ -8,11 +8,9 @@
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="project.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="JsonPackageReference">
+    <PackageReference Include="TxtPackageReference">
       <Version>0.0.9-beta2</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.App">
@@ -25,5 +23,5 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(NuGetPackageRoot)jsonpackagereference\0.0.9-beta2\build\JsonPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)jsonpackagereference\0.0.9-beta2\build\JsonPackageReference.targets')" />
+  <Import Project="$(NuGetPackageRoot)TxtPackageReference\0.0.9-beta2\build\TxtPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)TxtPackageReference\0.0.9-beta2\build\TxtPackageReference.targets')" />
 </Project>

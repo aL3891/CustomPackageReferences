@@ -9,7 +9,7 @@ using System.Reflection;
 namespace CustomPackageReferences
 {
 
-    public class JsonPackageReferenceTask : CustomPackageReferenceTask
+    public class ConfigPackageReferenceTask : CustomPackageReferenceTask
     {
         public override IEnumerable<PackageReference> GetPackages(string projectPath, string targetFramework)
         {

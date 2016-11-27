@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <package>
   <metadata>
-    <id>JsonPackageReference</id>
+    <id>TxtPackageReference</id>
     <version>0.0.9-beta2</version>
-    <title>JsonPackageReference</title>
+    <title>TxtPackageReference</title>
     <authors>Allan Lindqvist</authors>
     <owners>Allan Lindqvist</owners>
     <licenseUrl>https://github.com/aL3891/CustomPackageReferences/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/aL3891/CustomPackageReferences</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Adds project.json support for msbuild based .net core projects</description>
+    <description>Adds support for txt based package references in msbuild based .net core projects</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>msbuild nuget package reference project.json</tags>
   </metadata>
   <files>
-    <file src="\bin\Debug\netstandard1.3\JsonPackageReference.dll" target="JsonPackageReference.dll" />
+    <file src="\bin\Debug\netstandard1.3\TxtPackageReference.dll" target="TxtPackageReference.dll" />
     <file src="\bin\Debug\netstandard1.3\CustomPackageReferenceCore.dll" target="CustomPackageReferenceCore.dll" />
-    <file src="JsonPackageReference.targets" target="build\JsonPackageReference.targets" />
+    <file src="TxtPackageReference.targets" target="build\TxtPackageReference.targets" />
   </files>
 
 </package>
