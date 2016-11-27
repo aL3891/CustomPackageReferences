@@ -10,6 +10,8 @@ following into your project file.
 
 This line can be found in the ``obj\<project>.csproj.nuget.g.targets``, msbuild currently ignores these targets during restore with is why it has to be manually added to the main project file. This also has to be done when updating versions.
 
+Note also that there is no connection to visual studio, this should work just as well from the commandline and on linux/mac (though this is not tested atm, please file bugs if you find them)
+
 ## Whats the catch?
 
 There are still some bumps in the experience. First, dotnet restore has to be run twice initially, once to get the JsonPackageReference package and then once again to restore your package. Visual studio will also not detect changes in the project.json file so after a package is added, you must manually do a dotnet restore in order for the changes to get picked up. Finally, due to what is probably a bug in the vs2017 rc, you may have to reload you project before intellisense starts working on for your new packages
@@ -18,7 +20,7 @@ Right now only project.json is supported and target specific package references 
 In the future other ways to define references could be implemented such as
 
 * packages.config
-* packages.xaml
+* packages.xaml (for Mike)
 * references as files/items
 * yaml
 * plain text files
