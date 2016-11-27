@@ -8,7 +8,7 @@ following into your project file.
 
     <Import Project="$(NuGetPackageRoot)jsonpackagereference\1.0.0\build\JsonPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)jsonpackagereference\1.0.0\build\JsonPackageReference.targets')" />
 
-This line can be found in the ``obj\<project>.csproj.nuget.g.targets``, msbuild currently ignores these targets during restore with is why it has to be manually added to the main project file.
+This line can be found in the ``obj\<project>.csproj.nuget.g.targets``, msbuild currently ignores these targets during restore with is why it has to be manually added to the main project file. This also has to be done when updating versions.
 
 ## Whats the catch?
 
@@ -24,3 +24,4 @@ In the future other ways to define references could be implemented such as
 * plain text files
 
 If you have an idea for another way to define packages, please submit an issue!
+
