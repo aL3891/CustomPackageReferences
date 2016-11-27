@@ -1,5 +1,4 @@
-﻿using Moq;
-using System;
+﻿using System;
 
 
 class Program
@@ -7,6 +6,6 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World!");
-        Mock.Of<object>();
+        //Moq.Mock.Of<object>();
     }
 }
