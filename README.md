@@ -8,7 +8,7 @@ following into your project file.
 
     <Import Project="$(NuGetPackageRoot)jsonpackagereference\1.0.0\build\JsonPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)jsonpackagereference\1.0.0\build\JsonPackageReference.targets')" />
 
-This line can be found in the obj\<project>.csproj.nuget.g.targets, msbuild currently ignores these targets during restore
+This line can be found in the ``obj\<project>.csproj.nuget.g.targets``, msbuild currently ignores these targets during restore with is why it has to be manually added to the main project file.
 
 ## Whats the catch?
 
