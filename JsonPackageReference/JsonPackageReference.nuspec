@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>JsonPackageReference</id>
-    <version>1.0.0</version>
+    <version>0.0.9-beta</version>
     <title>JsonPackageReference</title>
     <authors>Allan Lindqvist</authors>
     <owners>Allan Lindqvist</owners>
