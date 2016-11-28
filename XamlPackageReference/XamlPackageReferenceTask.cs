@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Xml.Linq;
 
 namespace CustomPackageReferences
 {
@@ -13,23 +14,18 @@ namespace CustomPackageReferences
     {
         public override IEnumerable<PackageReference> GetPackages(string projectPath, string targetFramework)
         {
-            var jsonPath = Path.Combine(projectPath, "project.json");
-            if (!File.Exists(jsonPath)) {
-                File.WriteAllText(jsonPath, 
-@"{
-  ""dependencies"": {
-  }
-}");
+            var path = Path.Combine(projectPath, "packages.config");
+            if (!File.Exists(path))
+            {
+                File.WriteAllText(path,
+@"<?xml version=""1.0"" encoding=""utf-8""?>
+<packages>
+</packages>
+");
             }
 
-            var json = JToken.Parse(File.ReadAllText(jsonPath));
-            var deps = json["dependencies"];
-            
-            return deps.Children().OfType<JProperty>().Select(c => new PackageReference
-            {
-                Name = c.Name,
-                Version = c.First.Type == JTokenType.Object ? c.Value.Value<string>("version") : (string)((JValue)c.Value).Value
-            });
+            var xml = XElement.Load(path);
+            return xml.Elements("package").Select(x => new PackageReference { Name = x.Attribute("id").Value, Version = x.Attribute("version").Value });
         }
     }
 }

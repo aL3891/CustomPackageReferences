@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Build.Framework;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -11,25 +12,11 @@ namespace CustomPackageReferences
 
     public class FilePackageReferenceTask : CustomPackageReferenceTask
     {
+        public ITaskItem[] PackageReferenceFiles { get; set; }
+
         public override IEnumerable<PackageReference> GetPackages(string projectPath, string targetFramework)
         {
-            var jsonPath = Path.Combine(projectPath, "project.json");
-            if (!File.Exists(jsonPath)) {
-                File.WriteAllText(jsonPath, 
-@"{
-  ""dependencies"": {
-  }
-}");
-            }
-
-            var json = JToken.Parse(File.ReadAllText(jsonPath));
-            var deps = json["dependencies"];
-            
-            return deps.Children().OfType<JProperty>().Select(c => new PackageReference
-            {
-                Name = c.Name,
-                Version = c.First.Type == JTokenType.Object ? c.Value.Value<string>("version") : (string)((JValue)c.Value).Value
-            });
+            return PackageReferenceFiles.Select(p => new PackageReference { Name = p.ItemSpec, Version = File.ReadAllText(p.ItemSpec) });
         }
     }
 }

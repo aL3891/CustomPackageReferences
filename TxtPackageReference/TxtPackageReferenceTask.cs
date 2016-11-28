@@ -13,23 +13,13 @@ namespace CustomPackageReferences
     {
         public override IEnumerable<PackageReference> GetPackages(string projectPath, string targetFramework)
         {
-            var jsonPath = Path.Combine(projectPath, "project.json");
-            if (!File.Exists(jsonPath)) {
-                File.WriteAllText(jsonPath, 
-@"{
-  ""dependencies"": {
-  }
-}");
+            var path = Path.Combine(projectPath, "project.txt");
+            if (!File.Exists(path))
+            {
+                File.WriteAllText(path, @"");
             }
 
-            var json = JToken.Parse(File.ReadAllText(jsonPath));
-            var deps = json["dependencies"];
-            
-            return deps.Children().OfType<JProperty>().Select(c => new PackageReference
-            {
-                Name = c.Name,
-                Version = c.First.Type == JTokenType.Object ? c.Value.Value<string>("version") : (string)((JValue)c.Value).Value
-            });
+            return File.ReadAllLines(path).Select(l => l.Split(' ')).Select(p => new PackageReference { Name = p[0], Version = p[1] });
         }
     }
 }
