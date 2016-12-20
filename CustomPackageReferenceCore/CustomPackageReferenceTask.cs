@@ -19,7 +19,7 @@ namespace CustomPackageReferences
         public override bool Execute()
         {
             List<TaskItem> res = new List<TaskItem>();
-            foreach (var pr in GetPackages(ProjectPath, TargetFramework))
+            foreach (var pr in GetPackages(ProjectPath, TargetFramework) ?? Enumerable.Empty<PackageReference>())
             {
                 var t = new TaskItem(pr.Name);
                 t.SetMetadata("Version", pr.Version);

@@ -1,12 +1,17 @@
-﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="FilePackageReference.nuspec" />
     <None Include="FilePackageReference.targets" />
   </ItemGroup>
@@ -21,13 +26,13 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Build.Framework">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Framework.dll</HintPath>
+      <HintPath>$(MSBuildExtensionsPath)\Microsoft.Build.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build.Utilities.Core">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Utilities.Core.dll</HintPath>
+      <HintPath>$(MSBuildExtensionsPath)\Microsoft.Build.Utilities.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Newtonsoft.Json.dll</HintPath>
+      <HintPath>$(MSBuildExtensionsPath)\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

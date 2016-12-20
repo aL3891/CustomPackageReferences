@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -31,7 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Build.Utilities.Core">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Utilities.Core.dll</HintPath>
+      <HintPath>$(MSBuildExtensionsPath)\Microsoft.Build.Utilities.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

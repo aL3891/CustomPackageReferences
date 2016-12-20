@@ -16,7 +16,7 @@ namespace CustomPackageReferences
 
         public override IEnumerable<PackageReference> GetPackages(string projectPath, string targetFramework)
         {
-            return PackageReferenceFiles.Select(p => new PackageReference { Name = p.ItemSpec, Version = File.ReadAllText(p.ItemSpec) });
+            return PackageReferenceFiles?.Select(p => new PackageReference { Name = Path.GetFileNameWithoutExtension(p.ItemSpec), Version = File.ReadAllText(p.ItemSpec) });
         }
     }
 }

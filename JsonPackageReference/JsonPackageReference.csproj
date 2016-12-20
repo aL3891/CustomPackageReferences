@@ -1,37 +1,41 @@
-﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup Label="Configuration">
+    <OutputPath>bin\</OutputPath>
+    <ProjectGuid>{759870CF-FC31-48D6-B450-D904926C28D4}</ProjectGuid>
+  </PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="JsonPackageReference.nuspec" />
-    <None Include="JsonPackageReference.targets" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NETStandard.Library">
       <Version>1.6</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161104-2</Version>
+      <Version>1.1.0-alpha-20161207-2</Version>
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Build.Framework">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Framework.dll</HintPath>
+      <HintPath>$(MSBuildExtensionsPath)\Microsoft.Build.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build.Utilities.Core">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Utilities.Core.dll</HintPath>
+      <HintPath>$(MSBuildExtensionsPath)\Microsoft.Build.Utilities.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Newtonsoft.Json.dll</HintPath>
+      <HintPath>$(MSBuildExtensionsPath)\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CustomPackageReferenceCore\CustomPackageReferenceCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\JsonPackageReference.targets" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,14 +16,18 @@ Note also that there is no connection to visual studio, this should work just as
 
 There are still some bumps in the experience. First, dotnet restore has to be run twice initially, once to get the JsonPackageReference package and then once again to restore your package. Visual studio will also not detect changes in the project.json file so after a package is added, you must manually do a dotnet restore in order for the changes to get picked up. Finally, due to what is probably a bug in the vs2017 rc, you may have to reload you project before intellisense starts working on for your new packages
 
-Right now only project.json is supported and target specific package references are not supported. 
+Right now only the following project types are supported 
+
+* Project.json 
+* Packages.config
+* References as files/items
+* Plain text files
+
+Target specific package references are also not supported. 
 In the future other ways to define references could be implemented such as
 
-* packages.config
-* packages.xaml (for Mike)
-* references as files/items
-* yaml
-* plain text files
+* Xaml
+* Yaml
 
 If you have an idea for another way to define packages, please submit an issue!
 

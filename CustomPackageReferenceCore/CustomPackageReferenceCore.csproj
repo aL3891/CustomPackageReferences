@@ -18,10 +18,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Build.Framework">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Framework.dll</HintPath>
+      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview4-004233\Microsoft.Build.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build.Utilities.Core">
-      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview3-004056\Microsoft.Build.Utilities.Core.dll</HintPath>
+      <HintPath>C:\Program Files\dotnet\sdk\1.0.0-preview4-004233\Microsoft.Build.Utilities.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup />
