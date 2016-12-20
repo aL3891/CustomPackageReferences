@@ -23,12 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtPackageReference", "TxtP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtPackageReferenceApp", "TxtPackageReferenceApp\TxtPackageReferenceApp.csproj", "{947092B6-6906-463B-948E-55FB31DEDF21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlPackageReference", "XamlPackageReference\XamlPackageReference.csproj", "{DFB44B5E-2486-40FE-AF1C-44F0D0169C4E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlPackageReferenceApp", "XamlPackageReferenceApp\XamlPackageReferenceApp.csproj", "{FC5EDA9A-991A-4531-A26B-325E09310267}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-InitializeProjectJson", "InitializeProjectJson\dotnet-InitializeProjectJson.csproj", "{638AC277-9BB8-44F6-9797-00164C680C1F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,15 +60,6 @@ Global
 		{947092B6-6906-463B-948E-55FB31DEDF21}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{947092B6-6906-463B-948E-55FB31DEDF21}.Release|Any CPU.ActiveCfg = Debug|x86
 		{947092B6-6906-463B-948E-55FB31DEDF21}.Release|Any CPU.Build.0 = Debug|x86
-		{DFB44B5E-2486-40FE-AF1C-44F0D0169C4E}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{DFB44B5E-2486-40FE-AF1C-44F0D0169C4E}.Release|Any CPU.ActiveCfg = Debug|x86
-		{DFB44B5E-2486-40FE-AF1C-44F0D0169C4E}.Release|Any CPU.Build.0 = Debug|x86
-		{FC5EDA9A-991A-4531-A26B-325E09310267}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{FC5EDA9A-991A-4531-A26B-325E09310267}.Release|Any CPU.ActiveCfg = Debug|x86
-		{FC5EDA9A-991A-4531-A26B-325E09310267}.Release|Any CPU.Build.0 = Debug|x86
-		{638AC277-9BB8-44F6-9797-00164C680C1F}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{638AC277-9BB8-44F6-9797-00164C680C1F}.Release|Any CPU.ActiveCfg = Debug|x86
-		{638AC277-9BB8-44F6-9797-00164C680C1F}.Release|Any CPU.Build.0 = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

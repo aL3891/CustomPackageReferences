@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="build\JsonPackageReference.targets" />
+    <None Include="JsonPackageReference.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

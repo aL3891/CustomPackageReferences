@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <package>
   <metadata>
-    <id>FilePackageReference</id>
+    <id>JsonPackageReference</id>
     <version>0.0.9-beta3</version>
-    <title>FilePackageReference</title>
+    <title>JsonPackageReference</title>
     <authors>Allan Lindqvist</authors>
     <owners>Allan Lindqvist</owners>
     <licenseUrl>https://github.com/aL3891/CustomPackageReferences/blob/master/LICENSE</licenseUrl>
@@ -15,9 +15,9 @@
     <tags>msbuild nuget package reference project.json</tags>
   </metadata>
   <files>
-    <file src="\bin\Debug\netstandard1.3\FilePackageReference.dll" target="FilePackageReference.dll" />
+    <file src="\bin\Debug\netstandard1.3\JsonPackageReference.dll" target="JsonPackageReference.dll" />
     <file src="\bin\Debug\netstandard1.3\CustomPackageReferenceCore.dll" target="CustomPackageReferenceCore.dll" />
-    <file src="FilePackageReference.targets" target="build\FilePackageReference.targets" />
+    <file src="build\JsonPackageReference.targets" target="build\JsonPackageReference.targets" />
   </files>
 
 </package>
