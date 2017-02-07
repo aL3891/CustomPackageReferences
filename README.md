@@ -6,7 +6,7 @@ Msbuild however is a very flexible platform so its possible to have the project.
 Just install the ``JsonPackageReference`` package and add a projet.json file and you're almost up and running. Hopefully this extra step an be eliminated, but right now you have to paste the
 following into your project file.
 
-    <Import Project="$(NuGetPackageRoot)jsonpackagereference\1.0.0\build\JsonPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)jsonpackagereference\1.0.0\build\JsonPackageReference.targets')" />
+    <Import Project="$(USERPROFILE)\.nuget\packages\JsonPackageReference\0.0.9-beta4\JsonPackageReference.targets" Condition="Exists('$(USERPROFILE)\.nuget\packages\JsonPackageReference\0.0.9-beta4\JsonPackageReference.targets')" />
 
 This line can be found in the ``obj\<project>.csproj.nuget.g.targets``, msbuild currently ignores these targets during restore with is why it has to be manually added to the main project file. This also has to be done when updating versions.
 
