@@ -17,7 +17,7 @@
   <files>
     <file src="\bin\Debug\netstandard1.3\ConfigPackageReference.dll" target="ConfigPackageReference.dll" />
     <file src="\bin\Debug\netstandard1.3\CustomPackageReferenceCore.dll" target="CustomPackageReferenceCore.dll" />
-    <file src="ConfigPackageReference.targets" target="build\ConfigPackageReference.targets" />
+    <file src="ConfigPackageReference.targets" target="ConfigPackageReference.targets" />
   </files>
 
 </package>

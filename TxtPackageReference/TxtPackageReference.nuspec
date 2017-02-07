@@ -17,7 +17,7 @@
   <files>
     <file src="\bin\Debug\netstandard1.3\TxtPackageReference.dll" target="TxtPackageReference.dll" />
     <file src="\bin\Debug\netstandard1.3\CustomPackageReferenceCore.dll" target="CustomPackageReferenceCore.dll" />
-    <file src="TxtPackageReference.targets" target="build\TxtPackageReference.targets" />
+    <file src="TxtPackageReference.targets" target="TxtPackageReference.targets" />
   </files>
 
 </package>

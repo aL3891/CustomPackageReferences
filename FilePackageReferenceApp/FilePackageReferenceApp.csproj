@@ -4,7 +4,10 @@
     <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReferenceFiles Include="**\*.pkgref"/>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="FilePackageReference" Version="0.0.9-beta4" />
   </ItemGroup>
-  <Import Project="$(NuGetPackageRoot)FilePackageReference\0.0.9-beta4\build\FilePackageReference.targets" Condition="Exists('$(NuGetPackageRoot)FilePackageReference\0.0.9-beta4\build\FilePackageReference.targets')" />
+  <Import Project="$(USERPROFILE)\.nuget\packages\FilePackageReference\0.0.9-beta4\FilePackageReference.targets" Condition="Exists('$(USERPROFILE)\.nuget\packages\FilePackageReference\0.0.9-beta4\FilePackageReference.targets')" />
 </Project>

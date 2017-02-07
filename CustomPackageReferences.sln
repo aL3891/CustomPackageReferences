@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26127.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomPackageReferenceCore", "CustomPackageReferenceCore\CustomPackageReferenceCore.csproj", "{830E43AA-F4E7-4815-9433-1AF8FEC10DCC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomPackageReferenceTest", "CustomPackageReferenceTest\CustomPackageReferenceTest.csproj", "{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonPackageReference", "JsonPackageReference\JsonPackageReference.csproj", "{759870CF-FC31-48D6-B450-D904926C28D4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonPackageReferenceApp", "JsonPackageReferenceApp\JsonPackageReferenceApp.csproj", "{9761D0A3-EF03-47B5-B62E-03067716D4A8}"
@@ -45,18 +43,6 @@ Global
 		{830E43AA-F4E7-4815-9433-1AF8FEC10DCC}.Release|x64.Build.0 = Release|Any CPU
 		{830E43AA-F4E7-4815-9433-1AF8FEC10DCC}.Release|x86.ActiveCfg = Release|Any CPU
 		{830E43AA-F4E7-4815-9433-1AF8FEC10DCC}.Release|x86.Build.0 = Release|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Debug|x64.Build.0 = Debug|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Debug|x86.Build.0 = Debug|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Release|x64.ActiveCfg = Release|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Release|x64.Build.0 = Release|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Release|x86.ActiveCfg = Release|Any CPU
-		{FAA373DB-847F-4E7E-B5DC-7EDB43B65CC1}.Release|x86.Build.0 = Release|Any CPU
 		{759870CF-FC31-48D6-B450-D904926C28D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{759870CF-FC31-48D6-B450-D904926C28D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{759870CF-FC31-48D6-B450-D904926C28D4}.Debug|x64.ActiveCfg = Debug|Any CPU

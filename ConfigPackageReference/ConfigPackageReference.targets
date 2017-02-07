@@ -1,6 +1,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask TaskName="CustomPackageReferences.ConfigPackageReferenceTask" AssemblyFile="..\ConfigPackageReference.dll" />
-  <Target Name="ShimProjectFile" BeforeTargets="_GenerateRestoreGraphWalkPerFramework">
+  <UsingTask TaskName="CustomPackageReferences.ConfigPackageReferenceTask" AssemblyFile="ConfigPackageReference.dll" />
+  <Target Name="ShimProjectFile" BeforeTargets="_GetProjectJsonPath">
     <ConfigPackageReferenceTask TargetFramework="$(TargetFrameworks)" ProjectPath="$(MSBuildProjectDirectory)">
       <Output
           TaskParameter="PackageReferences"

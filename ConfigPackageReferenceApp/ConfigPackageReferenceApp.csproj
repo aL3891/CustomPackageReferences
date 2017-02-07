@@ -9,5 +9,5 @@
   <ItemGroup>
     <PackageReference Include="ConfigPackageReference" Version="0.0.9-beta4" />
   </ItemGroup>
-  <Import Project="$(NuGetPackageRoot)ConfigPackageReference\0.0.9-beta4\build\ConfigPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)ConfigPackageReference\0.0.9-beta4\build\ConfigPackageReference.targets')" />
+  <Import Project="$(USERPROFILE)\.nuget\packages\ConfigPackageReference\0.0.9-beta4\ConfigPackageReference.targets"  Condition="Exists('$(USERPROFILE)\.nuget\packages\ConfigPackageReference\0.0.9-beta4\ConfigPackageReference.targets')" />
 </Project>

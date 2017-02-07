@@ -4,10 +4,7 @@
     <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="TxtPackageReference" Version="0.0.9-beta4" />
   </ItemGroup>
-  <Import Project="$(NuGetPackageRoot)TxtPackageReference\0.0.9-beta4\build\TxtPackageReference.targets" Condition="Exists('$(NuGetPackageRoot)TxtPackageReference\0.0.9-beta4\build\TxtPackageReference.targets')" />
+  <Import Project="$(USERPROFILE)\.nuget\packages\TxtPackageReference\0.0.9-beta4\TxtPackageReference.targets" Condition="Exists('$(USERPROFILE)\.nuget\packages\TxtPackageReference\0.0.9-beta4\TxtPackageReference.targets')" />
 </Project>
