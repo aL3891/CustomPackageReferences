@@ -1,28 +1,10 @@
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReferenceFiles Include="**\*.pkgref"/>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
+    <PackageReference Include="FilePackageReference" Version="0.0.9-beta4" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <PackageReference Include="FilePackageReference">
-      <Version>0.0.9-beta2</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161104-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(NuGetPackageRoot)FilePackageReference\0.0.9-beta2\build\FilePackageReference.targets" Condition="Exists('$(NuGetPackageRoot)FilePackageReference\0.0.9-beta2\build\FilePackageReference.targets')" />
+  <Import Project="$(NuGetPackageRoot)FilePackageReference\0.0.9-beta4\build\FilePackageReference.targets" Condition="Exists('$(NuGetPackageRoot)FilePackageReference\0.0.9-beta4\build\FilePackageReference.targets')" />
 </Project>

@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>JsonPackageReference</id>
-    <version>0.0.9-beta3</version>
+    <version>0.0.9-beta4</version>
     <title>JsonPackageReference</title>
     <authors>Allan Lindqvist</authors>
     <owners>Allan Lindqvist</owners>
@@ -17,7 +17,7 @@
   <files>
     <file src="\bin\Debug\netstandard1.3\JsonPackageReference.dll" target="JsonPackageReference.dll" />
     <file src="\bin\Debug\netstandard1.3\CustomPackageReferenceCore.dll" target="CustomPackageReferenceCore.dll" />
-    <file src="build\JsonPackageReference.targets" target="build\JsonPackageReference.targets" />
+    <file src="JsonPackageReference.targets" target="JsonPackageReference.targets" />
   </files>
 
 </package>

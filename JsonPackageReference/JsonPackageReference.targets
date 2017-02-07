@@ -1,0 +1,11 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="CustomPackageReferences.JsonPackageReferenceTask" AssemblyFile="..\JsonPackageReference.dll" />
+  <Target Name="ShimProjectFile" BeforeTargets="_GenerateRestoreGraphWalkPerFramework">
+    <FilePackageReferenceTask TargetFramework="$(TargetFrameworks)" ProjectPath="$(MSBuildProjectDirectory)" PackageReferenceFiles="@(PackageReferenceFiles)">
+      <Output
+          TaskParameter="PackageReferences"
+          ItemName="PackageReference"  />
+    </FilePackageReferenceTask>
+    <Message Text="@(PackageReference)" Importance="high" />
+  </Target>
+</Project>
